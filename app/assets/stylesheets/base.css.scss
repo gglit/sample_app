@@ -1,0 +1,97 @@
+@import "bootstrap";
+
+$gray:	#556270;
+$blue:	#4ECDC4;
+$green:	#C7F464;
+$pink:	#FF6B6B;
+$red:	#C44D58;
+$white:	#FFFFFF;
+
+@font-face {
+    font-family: 'PTS';
+    src: url(font-path('pts.eot'));
+    src: url(font-path('pts.eot'))		format('embedded-opentype'),
+         url(font-path('pts.woff'))		format('woff'),
+         url(font-path('pts.ttf'))		format('truetype'),
+         url(font-path('pts.svg#ptsNormal'))	format('svg');
+}
+
+body{
+    font-family: PTS;
+    font-size:	 15px;
+    background: $gray;
+}
+
+a{
+    font-family: PTS;
+    font-size:	 15px;
+
+}
+
+body > .container{
+    .center.hero-unit{
+	border-radius:	0;
+	background:	$white;
+	border-left:	1px solid $green;
+	border-right:	1px solid $green;
+	border-bottom:	1px solid $green;
+	top: 70px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -470px;
+	overflow-y: scroll;
+	width: 818px;
+	
+    }
+}
+
+header{
+    .navbar-inner{
+	height:	    70px;
+        background: #4ECDC4 !important;
+
+	.container{
+	    position: relative;
+	    nav{
+		position:   absolute;
+		right:	    0;
+		top:	    15px;
+		a{
+		    color:	 #556270;
+		    font-size:   20px;
+		    font-family: PTS;
+		    &:hover{
+			color:	 #FFFFFF;
+		    }
+		}
+	    }
+	}
+
+    }
+    a#logo{
+	overflow:	    hidden;
+	position:	    relative;
+	color:		    #FFFFFF;
+	text-decoration:    none;
+	font-size:	    20px;
+	font-family:	    PTS;
+	padding-left:	    75px;
+	top:		    10px;
+	width:		    100px;
+	background-image:   image-url('logoBg.png') !important;
+	background-repeat:  no-repeat;
+	background-size:    auto 50px;
+	display:	    block;
+	height:		    50px;	
+    }
+}
+
+a.btn{
+    background: $pink;
+    border: none;
+    border-radius: 0;
+    &:hover{
+	background: $red;
+    }
+}
