@@ -29,7 +29,6 @@ a{
 }
 
 body > .container{
-    .center.hero-unit{
 	border-radius:	0;
 	background:	$white;
 	border-left:	1px solid $green;
@@ -42,8 +41,6 @@ body > .container{
 	margin-left: -470px;
 	overflow-y: scroll;
 	width: 818px;
-	
-    }
 }
 
 header{
